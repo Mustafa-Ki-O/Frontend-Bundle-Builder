@@ -8,3 +8,4 @@ Take-home assignment built with:
 - Tailwind CSS
 
 Work in progress.
+
