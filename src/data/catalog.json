@@ -1,0 +1,203 @@
+{
+  "steps": [
+    {
+      "id": "cameras",
+      "title": "Choose your cameras",
+      "products": [
+        {
+          "id": "cam-v4",
+          "title": "Wyze Cam v4",
+          "description": "The clearest Wyze Cam ever made.",
+          "price": 27.98,
+          "comparePrice": 35.98,
+          "discount": 22,
+          "image": "/images/cameras/cam-v4.png",
+          "learnMore": "#",
+          "variants": [
+            {
+              "id": "white",
+              "label": "White",
+              "thumbnail": "/images/variants/white.png"
+            },
+            {
+              "id": "grey",
+              "label": "Grey",
+              "thumbnail": "/images/variants/grey.png"
+            },
+            {
+              "id": "black",
+              "label": "Black",
+              "thumbnail": "/images/variants/black.png"
+            }
+          ]
+        },
+        {
+          "id": "cam-pan-v3",
+          "title": "Wyze Cam Pan v3",
+          "description": "360° pan & 180° tilt.",
+          "price": 34.98,
+          "comparePrice": 39.98,
+          "discount": 12,
+          "image": "/images/cameras/pan-v3.png",
+          "learnMore": "#",
+          "variants": [
+            {
+              "id": "white",
+              "label": "White"
+            },
+            {
+              "id": "black",
+              "label": "Black"
+            }
+          ]
+        },
+        {
+          "id": "floodlight-v2",
+          "title": "Wyze Cam Floodlight v2",
+          "description": "2K floodlight camera.",
+          "price": 69.98,
+          "comparePrice": 89.98,
+          "discount": 22,
+          "image": "/images/cameras/floodlight-v2.png",
+          "learnMore": "#",
+          "variants": [
+            {
+              "id": "white",
+              "label": "White"
+            },
+            {
+              "id": "black",
+              "label": "Black"
+            }
+          ]
+        },
+        {
+          "id": "doorbell",
+          "title": "Wyze Duo Cam Doorbell",
+          "description": "Two cameras. Two views.",
+          "price": 69.98,
+          "comparePrice": null,
+          "discount": null,
+          "image": "/images/cameras/doorbell.png",
+          "learnMore": "#",
+          "variants": []
+        },
+        {
+          "id": "battery-pro",
+          "title": "Wyze Battery Cam Pro",
+          "description": "Protect anywhere.",
+          "price": 89.98,
+          "comparePrice": null,
+          "discount": null,
+          "image": "/images/cameras/battery-pro.png",
+          "learnMore": "#",
+          "variants": [
+            {
+              "id": "white",
+              "label": "White"
+            },
+            {
+              "id": "black",
+              "label": "Black"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "title": "Choose your plan",
+      "products": [
+        {
+          "id": "cam-unlimited",
+          "title": "Cam Unlimited",
+          "description": "Unlimited cloud recording.",
+          "price": 9.99,
+          "comparePrice": 14.99,
+          "discount": 33,
+          "image": "/images/plans/cam-unlimited.png",
+          "learnMore": "#",
+          "variants": []
+        },
+        {
+          "id": "cam-plus",
+          "title": "Cam Plus",
+          "description": "AI detection and cloud recording.",
+          "price": 3.99,
+          "comparePrice": null,
+          "discount": null,
+          "image": "/images/plans/cam-plus.png",
+          "learnMore": "#",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "title": "Choose your sensors",
+      "products": [
+        {
+          "id": "motion-sensor",
+          "title": "Wyze Sense Motion Sensor",
+          "description": "Detects movement instantly.",
+          "price": 19.98,
+          "comparePrice": null,
+          "discount": null,
+          "image": "/images/sensors/motion-sensor.png",
+          "learnMore": "#",
+          "variants": []
+        },
+        {
+          "id": "entry-sensor",
+          "title": "Wyze Sense Entry Sensor",
+          "description": "Door & window sensor.",
+          "price": 14.98,
+          "comparePrice": null,
+          "discount": null,
+          "image": "/images/sensors/entry-sensor.png",
+          "learnMore": "#",
+          "variants": []
+        },
+        {
+          "id": "sense-hub",
+          "title": "Wyze Sense Hub",
+          "description": "Required for Wyze Sense.",
+          "price": 29.98,
+          "comparePrice": null,
+          "discount": null,
+          "image": "/images/sensors/sense-hub.png",
+          "learnMore": "#",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "accessories",
+      "title": "Add extra protection",
+      "products": [
+        {
+          "id": "microsd-256",
+          "title": "Wyze MicroSD Card (256GB)",
+          "description": "Continuous local recording.",
+          "price": 24.99,
+          "comparePrice": 29.99,
+          "discount": 17,
+          "image": "/images/accessories/microsd-256.png",
+          "learnMore": "#",
+          "variants": []
+        },
+        {
+          "id": "power-adapter",
+          "title": "Power Adapter",
+          "description": "Official Wyze adapter.",
+          "price": 14.99,
+          "comparePrice": null,
+          "discount": null,
+          "image": "/images/accessories/power-adapter.png",
+          "learnMore": "#",
+          "variants": []
+        }
+      ]
+    }
+  ]
+}
