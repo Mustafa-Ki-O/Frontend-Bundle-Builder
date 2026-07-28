@@ -25,7 +25,7 @@ const Steps = () => {
                     selectedNum={0} 
                     onToggle={() => handleToggle(step.id)}
                 >
-                    <div className="flex flex-col gap-4">
+                    <div className="grid grid-cols-2 items-start  gap-[19px] w-full">
                         {step.products.map((product) => (
                             <Card
                                 key={product.id}
