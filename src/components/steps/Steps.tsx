@@ -1,21 +1,55 @@
+import { useState } from "react"
+import Accordion from "../UI/Accordion"
+import logo from '@/assets/vectors/livestream.svg'
+import catalogData from '@/data/catalog.json'
+import Card from "../UI/CounterCard"
 const Steps = () => {
 
 
-    return (
-        <section className="flex-1  bg-background rounded-[10px]">
-           <h5 className="px-15 uppercase text-step text-xs">
-            Review
-        </h5>
+   
+    const [openStepId, setOpenStepId] = useState<string | null>("cameras")
 
-        <div className="flex flex-col justify-center items-start p-20 pb-31">
-        <h5 className=" text-[#1F1F1F] text-[22px] font-semibold">
-            Your security system
-        </h5>
-        <h5 className=" text-text text-[14px]">
-            Review your personalized protection system designed to keep what matters most safe.
-        </h5>
-        </div>
+    const handleToggle = (stepId: string) => {
+        setOpenStepId(prev => (prev === stepId ? null : stepId))
+    }
+
+    return (
+        <section className="flex-1 min-w-[768px] bg-background rounded-[10px]">
+            {catalogData.steps.map((step) => (
+                <Accordion
+                    key={step.id}
+                    open={openStepId === step.id}
+                    title={step.title}
+                    step={`STEP ${step.stepNumber} OF ${catalogData.steps.length}`}
+                    logo={logo}
+                    selectedNum={0} 
+                    onToggle={() => handleToggle(step.id)}
+                >
+                    <div className="flex flex-col gap-4">
+                        {step.products.map((product) => (
+                            <Card
+                                key={product.id}
+                                id={product.id}
+                                nextStep={step.stepNumber + 1}
+                                className="custom-card-class"
+                                name={product.title}
+                                text={product.description}
+                                image={product.image}
+                                badge={product.discountText || undefined}
+                                price={product.price}
+                                comparePrice={product.comparePrice || 0}
+                                variants={product.variants.map(v => ({
+                                    name: v.label,
+                                    img: v.thumbnail || "",
+                                    count: 0
+                                }))}
+                            />
+                        ))}
+                    </div>
+                </Accordion>
+            ))}
         </section>
     )
 }
+
 export default Steps

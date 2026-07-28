@@ -12,12 +12,12 @@
           "price": 27.98,
           "comparePrice": 35.98,
           "discountText": "Save 22%",
-          "image": "/images/cameras/cam-v4.png",
+          "image": "/images/cameras/camera-1-1.png",
           "learnMoreUrl": "#",
           "variants": [
-            { "id": "white", "label": "White", "thumbnail": "/images/variants/white.png" },
-            { "id": "grey", "label": "Grey", "thumbnail": "/images/variants/grey.png" },
-            { "id": "black", "label": "Black", "thumbnail": "/images/variants/black.png" }
+            { "id": "white", "label": "White", "thumbnail": "/images/cameras/camera-1-1.png" },
+            { "id": "grey", "label": "Grey", "thumbnail": "/images/cameras/camera-1-1.png" },
+            { "id": "black", "label": "Black", "thumbnail": "/images/cameras/camera-1-1.png" }
           ]
         },
         {
@@ -27,11 +27,11 @@
           "price": 34.98,
           "comparePrice": 39.98,
           "discountText": "Save 12%",
-          "image": "/images/cameras/pan-v3.png",
+          "image": "/images/cameras/camera-2-1.png",
           "learnMoreUrl": "#",
           "variants": [
-            { "id": "white", "label": "White", "thumbnail": "/images/variants/white.png" },
-            { "id": "black", "label": "Black", "thumbnail": "/images/variants/black.png" }
+            { "id": "white", "label": "White", "thumbnail": "/images/cameras/camera-2-1.png" },
+            { "id": "black", "label": "Black", "thumbnail": "/images/cameras/camera-2-2.png"}
           ]
         },
         {
@@ -41,11 +41,11 @@
           "price": 69.98,
           "comparePrice": 89.98,
           "discountText": "Save 22%",
-          "image": "/images/cameras/floodlight-v2.png",
+          "image": "/images/cameras/camera-3-1.png",
           "learnMoreUrl": "#",
           "variants": [
-            { "id": "white", "label": "White", "thumbnail": "/images/variants/white.png" },
-            { "id": "black", "label": "Black", "thumbnail": "/images/variants/black.png" }
+            { "id": "white", "label": "White", "thumbnail": "/images/cameras/camera-3-1.png" },
+            { "id": "black", "label": "Black", "thumbnail": "/images/cameras/camera-3-2.png" }
           ]
         },
         {
@@ -55,7 +55,7 @@
           "price": 69.98,
           "comparePrice": null,
           "discountText": null,
-          "image": "/images/cameras/doorbell.png",
+          "image": "/images/cameras/camera-4-1.png",
           "learnMoreUrl": "#",
           "variants": []
         },
@@ -66,11 +66,11 @@
           "price": 89.98,
           "comparePrice": null,
           "discountText": null,
-          "image": "/images/cameras/battery-pro.png",
+          "image":"/images/cameras/camera-5-1.png",
           "learnMoreUrl": "#",
           "variants": [
-            { "id": "white", "label": "White", "thumbnail": "/images/variants/white.png" },
-            { "id": "black", "label": "Black", "thumbnail": "/images/variants/black.png" }
+            { "id": "white", "label": "White", "thumbnail": "/images/cameras/camera-5-1.png" },
+            { "id": "black", "label": "Black", "thumbnail": "/images/cameras/camera-5-2.png" }
           ]
         }
       ]

@@ -12,9 +12,15 @@
   --color-step: #484848;
   --color-compare: #D8392B;
   --color-title: #0B0D10;
-  --color-text: #1F1F1FBF;
+  --color-text: #1F1F1F;
   --color-activeButton:#F0F4F7;
   --color-borderButton: #CCCCCC;
   --color-alert: #0AA288;
   
+}
+
+*{
+
+  margin: 0;
+  box-sizing: border-box;
 }
