@@ -16,6 +16,6 @@ export type BundleContextType = {
   selectVariant: (productId: string, variantId: string) => void;
   // goToNextStep: () => void;
   saveBundle: () => void;
-  setStep: (num?:number) => void;
+  setStep: (num?: number | null) => void;
  getSelectedProductsCountForStep: (stepProductIds: string[]) => number;
 };

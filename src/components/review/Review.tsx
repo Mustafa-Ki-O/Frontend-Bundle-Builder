@@ -35,7 +35,7 @@ const savedMoney = comparePriceForTotal > priceForTotal
     ? comparePriceForTotal - priceForTotal 
     : 0;
     return (
-        <section className="flex-1 pt-[15px]  w-full md:max-w-[399px]   bg-background  rounded-[10px]">
+        <section className="flex-1 pt-[15px]  w-full md:w-full  lg:max-w-[399px]   bg-background  rounded-[10px]">
         <h5 className="px-[15px] uppercase text-step text-[12px]">
             Review
         </h5>
@@ -111,13 +111,14 @@ const savedMoney = comparePriceForTotal > priceForTotal
             <h3 className="text-center text-alert text-[12px]">
                 Congrats! You’re saving ${savedMoney.toFixed(2)} on your security bundle!
             </h3>
-            <button className=" cursor-pointer bg-primary text-white text-[17px] rounded-[4px] px-[16px] py-[13px]">
+            <button onClick={() => alert("Redirecting to checkout...")} className=" cursor-pointer bg-primary text-white text-[17px] rounded-[4px] px-[16px] py-[13px]">
                 Checkout
             </button>
             <button onClick={()=>{
                 saveBundle();
                 alert("Your security system has been saved successfully!");
-            }} className="cursor-pointer text-center text-step underline text-[14px] bg-transparent outline-none border-none">
+                window.location.reload()
+            }} className=" italic cursor-pointer text-center text-step underline text-[14px] bg-transparent outline-none border-none">
                 Save my system for later
             </button>
             </div>
@@ -126,9 +127,7 @@ const savedMoney = comparePriceForTotal > priceForTotal
             )
            } 
             
-          
         </div>
-
 
         </section>
     )

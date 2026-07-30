@@ -42,11 +42,11 @@ const Accordion = ({
               </div>
     
               <div className="flex justify-center items-center gap-[4px]">
-                {open && (
-                  <h5 className="text-[14px] text-primary font-semibold">
+                {selectedNum > 0 && (
+                  <h5 className=" text-[14px] text-primary font-semibold">
                     {selectedNum} selected
                   </h5>
-                )}
+                )} 
                 <img
                   src={polygon}
                   className={`w-[12px] transition-transform duration-300 ${open ? 'rotate-180' : 'rotate-0'}`}

@@ -84,18 +84,18 @@ export function BundleProvider({
   //   }));
   // };
 
-const setStep = (stepNumber: number | null) => {
-  setBundle((prev) => {
-    const nextStep = stepNumber !== undefined 
-      ? stepNumber 
-      : (prev.currentStep < stepsLength ? prev.currentStep + 1 : 1);
-      
-    return {
-      ...prev,
-      currentStep: nextStep,
+  const setStep = (stepNumber?: number | null) => {
+      setBundle((prev) => {
+        const nextStep = stepNumber !== undefined && stepNumber !== null
+          ? stepNumber 
+          : ((prev.currentStep ?? 1) < stepsLength ? (prev.currentStep ?? 1) + 1 : 1);
+          
+        return {
+          ...prev,
+          currentStep: nextStep,
+        };
+      });
     };
-  });
-};
 
   const getSelectedProductsCountForStep = (stepProductIds: string[]) => {
     return stepProductIds.reduce((count, productId) => {

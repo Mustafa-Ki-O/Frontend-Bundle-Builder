@@ -45,12 +45,12 @@ const handleNextClick = () => {
                     selectedNum={getSelectedProductsCountForStep(stepProductIds)}
                     onToggle={() => handleToggle(step.stepNumber)}
                 >
-                    <div className="grid grid-cols-1 md:grid-cols-2 items-start  gap-[19px] w-full pt-[15px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2  items-start gap-[19px] w-full pt-[15px]">
                         {step.products.map((product) => (
                             <Card
                                 key={product.id}
                                 id={product.id}
-                                className="custom-card-class"
+                                className=""
                                 name={product.title}
                                 text={product.description}
                                 image={product.image}

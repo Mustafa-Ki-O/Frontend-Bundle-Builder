@@ -51,7 +51,7 @@ const Card = ({className, id, name, text, image, variants, badge, price, compare
     };
 
     return (
-        <div id={id} className={`flex justify-center bg-white margin-auto items-start gap-[19px] w-[100%] rounded-[10px] hover:shadow-lg p-[11px] h-full max-w-[738px] ${className} ${totalProductQuantity > 0 ? "border-[2px] border-primary" : "border-none"}`}>
+        <div id={id} className={`flex  justify-center bg-white margin-auto items-start gap-[19px] w-[100%] rounded-[10px] hover:shadow-lg p-[11px] h-full max-w-[738px] ${className} ${totalProductQuantity > 0 ? "border-[2px] border-primary" : "border-none"}`}>
             <div className="relative flex items-center justify-center self-stretch min-w-[100px]">
                 {badge && (
                     <div className="absolute px-[6px] py-[2px] left-0 top-0 rounded-xl bg-primary text-white text-[12px]">
