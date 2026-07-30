@@ -1,4 +1,4 @@
-import { useBundle } from "../../context/BundleContext";
+
 import polygon from "/vectors/polygon-1.svg";
 
 type AccordionProps = {

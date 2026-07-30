@@ -16,7 +16,7 @@ Object.entries(bundle.cart).forEach(([productId, variants]) => {
         .find(p => p.id === productId);
 
     if (product) {
-        Object.entries(variants).forEach(([variantName, qty]) => {
+        Object.entries(variants).forEach(([_,qty]) => {
             if (qty > 0) {
                 subtotalPrice += product.price * qty;
                 subtotalComparePrice += (product.comparePrice || product.price) * qty;
@@ -51,7 +51,7 @@ const savedMoney = comparePriceForTotal > priceForTotal
 
            <div id="review-steps" className="flex flex-col justify-center items-start gap-[10px] w-full">
             {catalogData.steps.map((step) => {
-                const selectedProductsStep = step.products.filter((product,i)=>{
+                const selectedProductsStep = step.products.filter((product)=>{
                     const productCart = bundle.cart[product.id] || {};
                     return Object.values(productCart).some((qty)=>qty>0)
                 })
@@ -100,16 +100,16 @@ const savedMoney = comparePriceForTotal > priceForTotal
                 </p>
                 <div className="flex justify-center items-end gap-[4px]">
                     <h5 className="line-through text-step text-[20px]">
-                        ${comparePriceForTotal.toFixed(2)}
+                        ${Number(comparePriceForTotal).toFixed(2)}
                     </h5>
                   <h5 className="text-primary text-[32px]">
-                        ${priceForTotal}
+                        ${Number(priceForTotal).toFixed(2)}
                     </h5>
                 </div>
              </div>
             </div>
             <h3 className="text-center text-alert text-[12px]">
-                Congrats! You’re saving ${savedMoney.toFixed(2)} on your security bundle!
+                Congrats! You’re saving ${Number(savedMoney).toFixed(2)} on your security bundle!
             </h3>
             <button onClick={() => alert("Redirecting to checkout...")} className=" cursor-pointer bg-primary text-white text-[17px] rounded-[4px] px-[16px] py-[13px]">
                 Checkout

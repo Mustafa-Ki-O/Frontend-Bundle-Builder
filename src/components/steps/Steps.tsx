@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+
 import Accordion from "../UI/Accordion"
 // import logo from '@/assets/vectors/livestream.svg'
 import catalogData from '@/data/catalog.json'
