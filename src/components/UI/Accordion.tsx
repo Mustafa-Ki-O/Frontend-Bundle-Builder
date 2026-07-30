@@ -23,7 +23,7 @@ const Accordion = ({
 
     return(
         <>
-        <div  className={`flex py-[6px] rounded-md flex-col items-start justify-center gap-[5px] ${open ? 'bg-background' : 'bg-white'}`}>
+        <div  className={`flex py-[6px] rounded-[10px] flex-col items-start justify-center gap-[5px] ${open ? 'bg-background' : 'bg-white'}`}>
             <h5 className="px-[15px] text-step text-[10px]">
                 {step}
             </h5>
