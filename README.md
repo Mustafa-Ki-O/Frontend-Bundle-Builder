@@ -33,6 +33,10 @@ npm run dev
 yarn dev
 Open http://localhost:5173 in your browser to view the application.
 
+## Live Demo
+You can view the live project here: 
+[Frontend Bundle Builder on Vercel](https://frontend-bundle-builder-delta.vercel.app/)
+
 ## Design & Technical Notes / Decisions
 *Typography: The original Figma design uses the Gilroy font family. Since it is a proprietary commercial typeface and was not included in the assets, I substituted it with Inter as a clean, open-source alternative to ensure visual hierarchy and consistency.
 
