@@ -26,7 +26,7 @@ const {bundle,updateVariant} = useBundle()
 
 
     return(
-        <div className="pt-[15px] border-t-[0.5px] items-start border-t-step flex flex-col gap-[8px]">
+        <div className="pt-[15px] w-full border-t-[0.5px] items-start border-t-step flex flex-col gap-[8px]">
             <h4 className="uppercase text-[#A8B2BD] tracking-[1px] text-[12px] ">
                 {stepTitle}
             </h4>
@@ -47,7 +47,7 @@ const {bundle,updateVariant} = useBundle()
                         return (
                         <div key={variantName} className="flex w-full gap-[16px] justify-between items-center">
                             <div className="flex justify-between items-center gap-[12px] w-full">
-                              <div className="flex-1 flex justify-start items-center gap-[6px]">
+                              <div className="flex-1 flex justify-start items-center gap-[6px] w-full">
                                   {variantImg && (
                                       <img src={variantImg} alt={variantName} className="w-[41px] bg-white rounded-md object-contain" />
                                   )}
@@ -65,12 +65,13 @@ const {bundle,updateVariant} = useBundle()
                               <Counter 
                                   color={"white"}
                                   value={quantity}
+                                  disabled={product.price === 0}
                                   onIncrease={() => updateVariant(product.id, variantName, quantity + 1)}
                                   onDecrease={() => updateVariant(product.id, variantName, quantity - 1)}
                               />
                           </div> 
 
-                                <div className="whitespace-nowrap flex flex-col justify-center items-end gap-[1px]">
+                            <div className="whitespace-nowrap flex flex-col justify-center items-end gap-[1px]">
                                 {product.comparePrice && product.comparePrice > product.price && (
                                     
                                     <p className="text-[14px] line-through text-step text-end">
@@ -78,7 +79,7 @@ const {bundle,updateVariant} = useBundle()
                                     </p>
                                 )}
                                 <p className="text-[14px] text-primary text-end font-semibold">
-                                     ${totalPrice} 
+                                     {totalPrice === 0 ? "FREE" : (`${totalPrice } $`) } 
                                 </p>
                         </div>
             </div>

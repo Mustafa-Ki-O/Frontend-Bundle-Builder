@@ -50,7 +50,6 @@ const handleNextClick = () => {
                             <Card
                                 key={product.id}
                                 id={product.id}
-                                nextStep={step.stepNumber + 1}
                                 className="custom-card-class"
                                 name={product.title}
                                 text={product.description}

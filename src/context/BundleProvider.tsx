@@ -11,8 +11,16 @@ export function BundleProvider({
 }) {
   const [bundle, setBundle] = useState<BundleState>({
     currentStep: 1,
-    cart: {},
-    selectedVariants: {},
+    cart: {
+      "cam-v4": { "White": 1 },
+      "cam-unlimited": { "First": 1 },
+       "sense-hub": { "White": 1 }
+    },
+    selectedVariants: {
+      "cam-v4": "White",
+      "cam-unlimited": "First",
+      "sense-hub": "White"
+    },
   });
 
   const stepsLength = catalogData.steps.length;

@@ -1,4 +1,10 @@
 {
+  "offer":{
+    "title":"Fast Shipping",
+    "logo":"/images/extra/Fast-Shipping.png",
+    "comparePrice":30,
+    "price":0
+  },
   "steps": [
     {
       "id": "cameras",
@@ -116,6 +122,7 @@
           "learnMoreUrl": "#",
           "variants": [
             { "id": "white", "label": "White", "thumbnail": "/images/sensors/sensor-1-1.png" }
+           
           ]
         },
         {
@@ -126,10 +133,10 @@
           "comparePrice": 29.92,
           "discountText": null,
           "isFree": true,
-          "image": "/images/sensors/sensor-1-2.png",
+          "image": "/images/sensors/sensor-2-1.png",
           "learnMoreUrl": "#",
           "variants": [
-            { "id": "white", "label": "White", "thumbnail": "/images/sensors/sensor-1-2.png" }
+            { "id": "white", "label": "White", "thumbnail": "/images/sensors/sensor-2-1.png" }
           ]
         }
       ]
