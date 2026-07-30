@@ -1,4 +1,5 @@
-import polygon from "@/assets/vectors/polygon-1.svg";
+import { useBundle } from "../../context/BundleContext";
+import polygon from "/vectors/polygon-1.svg";
 
 type AccordionProps = {
   open: boolean;
@@ -22,11 +23,11 @@ const Accordion = ({
 
     return(
         <>
-        <div  className={`flex flex-col items-start justify-center gap-[5px] ${open ? 'bg-background' : 'bg-white'}`}>
+        <div  className={`flex py-[6px] rounded-md flex-col items-start justify-center gap-[5px] ${open ? 'bg-background' : 'bg-white'}`}>
             <h5 className="px-[15px] text-step text-[10px]">
                 {step}
             </h5>
-            <div className={`w-full flex flex-col justify-center items-center gap-[15px] ${open ? 'border-t  border-t-1 border-t-step' : 'border-t  border-t-1 border-t-step border-b  border-b-1 border-b-step'}   px-[15px] py-[20px] `}>
+            <div className={`w-full  flex flex-col justify-center items-center ${open ? 'border-t  border-t-1 border-t-step h-full' : 'border-t  border-t-1 border-t-step border-b  border-b-1 border-b-step'}   px-[15px] py-[20px] `}>
            <button
             type="button"
             onClick={onToggle}
@@ -54,11 +55,20 @@ const Accordion = ({
               </div>
         </button>
 
-        {open && (
-          <div className={`mt-[15px] transition-all duration-300 ${open ? 'scale-y-100' : 'scale-y-0'}`}>
+        {/* {open && (
+          <div className={`mt-[15px] transition-all duration-300 ${open ? 'scale-x-100' : 'scale-x-0'}`}>
             {children}
           </div>
-        )}
+        )} */}
+          <div
+            className={`mt-[15px] transition-all duration-300 transform origin-top-left ${
+              open
+                ? 'scale-y-100 opacity-100 h-auto visible'
+                : 'scale-y-0 opacity-30 h-0 overflow-hidden invisible'
+            }`}
+          >
+            {children}
+          </div>
       </div>
     </div>
    </>

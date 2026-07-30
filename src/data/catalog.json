@@ -3,6 +3,7 @@
     {
       "id": "cameras",
       "title": "Choose your cameras",
+      "logo": "/vectors/livestream.svg",
       "stepNumber": 1,
       "products": [
         {
@@ -57,7 +58,9 @@
           "discountText": null,
           "image": "/images/cameras/camera-4-1.png",
           "learnMoreUrl": "#",
-          "variants": []
+          "variants": [
+            { "id": "white", "label": "White", "thumbnail": "/images/cameras/camera-4-1.png" }
+          ]
         },
         {
           "id": "battery-pro",
@@ -79,6 +82,7 @@
       "id": "plan",
       "title": "Choose your plan",
       "stepNumber": 2,
+      "logo": "/vectors/plan-logo.svg",
       "products": [
         {
           "id": "cam-unlimited",
@@ -87,9 +91,11 @@
           "price": 9.99,
           "comparePrice": 12.99,
           "discountText": null,
-          "image": "/images/plans/cam-unlimited.png",
+          "image": "/images/plans/plan-1-1.png",
           "learnMoreUrl": "#",
-          "variants": []
+          "variants": [
+            { "id": "first", "label": "First", "thumbnail": "/images/plans/plan-1-1.png" }
+          ]
         }
       ]
     },
@@ -97,6 +103,7 @@
       "id": "sensors",
       "title": "Choose your sensors",
       "stepNumber": 3,
+      "logo": "/vectors/sensor-logo.svg",
       "products": [
         {
           "id": "motion-sensor",
@@ -105,9 +112,11 @@
           "price": 59.98,
           "comparePrice": null,
           "discountText": null,
-          "image": "/images/sensors/motion-sensor.png",
+          "image": "/images/sensors/sensor-1-1.png",
           "learnMoreUrl": "#",
-          "variants": []
+          "variants": [
+            { "id": "white", "label": "White", "thumbnail": "/images/sensors/sensor-1-1.png" }
+          ]
         },
         {
           "id": "sense-hub",
@@ -117,9 +126,11 @@
           "comparePrice": 29.92,
           "discountText": null,
           "isFree": true,
-          "image": "/images/sensors/sense-hub.png",
+          "image": "/images/sensors/sensor-1-2.png",
           "learnMoreUrl": "#",
-          "variants": []
+          "variants": [
+            { "id": "white", "label": "White", "thumbnail": "/images/sensors/sensor-1-2.png" }
+          ]
         }
       ]
     },
@@ -127,6 +138,7 @@
       "id": "accessories",
       "title": "Add extra protection",
       "stepNumber": 4,
+      "logo": "/vectors/extra-logo.svg",
       "products": [
         {
           "id": "microsd-256",
@@ -135,9 +147,11 @@
           "price": 41.96,
           "comparePrice": null,
           "discountText": null,
-          "image": "/images/accessories/microsd-256.png",
+          "image": "/images/extra/extra-1-1.png",
           "learnMoreUrl": "#",
-          "variants": []
+          "variants": [
+            { "id": "white", "label": "White", "thumbnail": "/images/extra/extra-1-1.png" }
+          ]
         }
       ]
     }

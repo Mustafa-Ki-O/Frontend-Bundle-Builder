@@ -1,7 +1,7 @@
 const Review = () => {
 
     return (
-        <div className="pt-[15px] max-w-[399px] flex flex-col justify-center items-start bg-background rounded-[10px]">
+        <div className="pt-[15px] w-full md:max-w-[399px] flex flex-col justify-center items-start bg-background rounded-[10px]">
         <h5 className="px-15 uppercase text-step text-xs">
             Review
         </h5>
